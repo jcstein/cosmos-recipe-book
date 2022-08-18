@@ -1,0 +1,24 @@
+syntax = "proto3";
+package recipes.recipes;
+
+// this line is used by starport scaffolding # proto/tx/import
+
+option go_package = "recipes/x/recipes/types";
+
+// Msg defines the Msg service.
+service Msg {
+      rpc CreateRecipe(MsgCreateRecipe) returns (MsgCreateRecipeResponse);
+// this line is used by starport scaffolding # proto/tx/rpc
+}
+
+message MsgCreateRecipe {
+  string creator = 1;
+  string dish = 2;
+  string ingredients = 3;
+}
+
+message MsgCreateRecipeResponse {
+  uint64 id = 1;
+}
+
+// this line is used by starport scaffolding # proto/tx/message

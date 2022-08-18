@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package recipes.recipes;
+
+option go_package = "recipes/x/recipes/types";
+
+message Recipe {
+  string creator = 1;
+  uint64 id = 2;
+  string dish = 3; 
+  string ingredients = 4; 
+}
