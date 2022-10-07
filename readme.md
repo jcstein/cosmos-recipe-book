@@ -869,7 +869,7 @@ Here is the full repository for your reference: https://github.com/jcstein/cosmo
 
 Now that you’ve built your first Cosmos blockchain using the Cosmos SDK and Ignite CLI, you are ready to take your skills to the next level.
 
-[Celestia](https://celestia.org) is an upcoming Cosmos blockchain that addresses the data availability problem and scalability.
+[Celestia](https://celestia.org) is an upcoming Cosmos modular blockchain network that addresses the data availability and scalability problems.
 
 What would you want you build on Celestia? Learn more [here](https://celestia.org/learn)
 
