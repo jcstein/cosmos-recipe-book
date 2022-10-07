@@ -103,7 +103,7 @@ The modular architecture of Cosmos is implemented in hubs and zones.
 - Zones: heterogeneous blockchains carrying out the authentication of accounts and transactions, the creation and distribution of tokens, and execution of changes to the chain.
 - Hubs: blockchains designed to connect the zones. When a zone connects to a hub through an IBC connection, the zone gets access to the other zones connected to the hub. Data and value can be sent and received between the zones without risk.
 
-![Untitled-2022-04-18-1848 (1).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a722f904-ba5f-4300-998e-630c476d96ab/Untitled-2022-04-18-1848_(1).png)
+![1.png](/img/1.png)
 
 For a more in-depth overview of the Cosmos SDK and ecosystem, see the [high-level overview](https://github.com/cosmos/cosmos-sdk/blob/main/docs/intro/overview.md).
 
@@ -392,7 +392,7 @@ Save the file to restart your chain.
 
 Visit the `gm` endpoint in your browser at [http://localhost:1317/gm/gm/gm](http://localhost:1317/gm/gm/gm). The query handler is not registered with gRPC, so you will see `not implemented` or `localhost cannot connect` error.
 
-![scrot 2022-08-15 at 11.52.07 PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/45046a64-5133-46b3-b572-b8319aa1bfca/scrot_2022-08-15_at_11.52.07_PM.png)
+![2.png](/img/2.png)
 
 ## ✍️ Register query handlers
 
@@ -418,7 +418,7 @@ Now we will make the following changes to our `x/gm/module.go` file to handle qu
     
 3. After your chain has restarted, visit [http://localhost:1317/gm/gm/gm](http://localhost:1317/gm/gm/gm) to see your `QueryGmResponse`
     
-    ![scrot 2022-08-16 at 12.31.12 AM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7adf3f3c-6e70-4d8c-83b7-40ca27801820/scrot_2022-08-16_at_12.31.12_AM.png)
+    ![3.png](/img/3.png)
     
 
 The `query` command has also scaffolded `x/gm/client/cli/query_gm.go` that implements a CLI equivalent of the gm query and mounted this command in `x/gm/client/cli/query.go` . Run the following command and get the same JSON response:
@@ -456,7 +456,7 @@ func (k Keeper) Gn(goCtx context.Context, req *types.QueryGmRequest) (*types.Que
 
 Head to your browser at [http://localhost:1317/gm/gm/gn](http://localhost:1317/gm/gm/gn) to see your second query:
 
-![scrot 2022-08-16 at 11.51.26 PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7dca06c6-743f-4719-a3cc-c2a80f46e1c8/scrot_2022-08-16_at_11.51.26_PM.png)
+![4.png](/img/4.png)
 
 Run this command in your terminal to query using the gmd CLI: 
 
@@ -847,7 +847,7 @@ Create your first recipe in the command line, when prompted, confirm the transac
 recipesd tx recipes create-recipe salad vegetables --from alice
 ```
 
-![2022-08-18 02.11.06.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d26c5841-5a94-4967-8990-b42f6b1ed324/2022-08-18_02.11.06.gif)
+![5.gif](/img/5.gif)
 
 ### ⌨️ Query your recipes with the CLI
 
@@ -857,7 +857,7 @@ To query all of the on-chain recipes:
 recipesd q recipes dishes
 ```
 
-![2022-08-18 02.20.29.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c9d62006-62a3-4179-9b36-821cc1d89c36/2022-08-18_02.20.29.gif)
+![6.gif](/img/6.gif)
 
 🎉 Congratulations, again! You have now successfully built a recipe book blockchain!
 
